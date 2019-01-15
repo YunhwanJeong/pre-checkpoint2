@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Self Assessments 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.css" rel="stylesheet" />
+  <script src="https://unpkg.com/expect@%3C21/umd/expect.min.js"></script>
+  <script src="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.js"></script>
+</head>
+<body>
+  <div id="mocha"></div>
+  <script src="salesTeam.js"></script>
+
+  <script>mocha.setup('bdd')</script>
+  <script src="getTeenager/getTeenager.js"></script>
+  <script src="isAgeDiverse/isAgeDiverse.js"></script>
+  <script src="oldest/oldest.js"></script>
+  <script src="sumConsecutives/sumConsecutives.js"></script>
+  <script src="tenThousandClub/tenThousandClub.js"></script>
+  <script src="unique/unique.js"></script>
+  <script src="__spec/spec.js"></script>
+  <script>
+    mocha.checkLeaks();
+    mocha.globals(['jQuery']);
+    mocha.run();
+  </script>
+</body>
+</html>

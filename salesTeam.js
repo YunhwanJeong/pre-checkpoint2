@@ -1,4 +1,4 @@
-[
+var salesTeam = [
   {
     "name": {
       "first": "Bruce",
@@ -199,4 +199,8 @@
     "age": 25,
     "sales": "$8712"
   }
-]
+];
+
+if(typeof module === "object" && typeof module.exports === "object") {
+  module.exports = salesTeam;
+}
