@@ -1,9 +1,9 @@
-# Pre Course Self-Assessment 2
+# Pre Course Checkpoint 2
 
 ## Guidelines
 
-- Self-assessments 를 하면서 최근에 학습한 부분들을 얼마나 잘 이해했는지 판단할 수 있습니다.
-- 모든 Self-assessments 는 완료후 반드시 pull request 를 해야 합니다(아래 가이드라인 참고).
+- Checkpoint 를 하면서 최근에 학습한 부분들을 얼마나 잘 이해했는지 판단할 수 있습니다.
+- 모든 Checkpoint 는 완료후 반드시 pull request 를 해야 합니다(아래 가이드라인 참고).
 - TIP: 요구되지 않는 테스트를 작성하는데 많은 시간을 들이지 마시기 바랍니다. 대신 Chrome Console 을 활용해서 빠르고 쉽게 작성한 코드를 테스트할 수 있습니다.
 
 

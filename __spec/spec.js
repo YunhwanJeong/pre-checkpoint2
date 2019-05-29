@@ -14,7 +14,7 @@ const testTeam = [
   { name: { first: 'Johnny', last: 'Koo' }, age: 20, sales: "$15000" }
 ];
 
-describe('Self Assessments 2', () => {
+describe('Checkpoint 2', () => {
 
   it('isAgeDiverse', () => {
     if(typeof module === "object" && typeof module.exports === "object") {
