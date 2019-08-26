@@ -6,13 +6,24 @@ if(typeof module === "object" && typeof module.exports === "object") {
   var salesTeam = require('../salesTeam.js');
 }
 
-function tenThousandClub(salesTeam){
-  // your code here
+function salesToNumber(salesString){
+  let onlyNum = salesString.slice(1);
+  return parseInt(onlyNum);
 }
 
-function salesToNumber(salesString){
-  //get rid of dollar sign:
-}
+function tenThousandClub(salesTeam){
+  let tenThousandArr = [];
+
+  for(let i = 0; i < salesTeam.length; i++) {
+    if(salesToNumber(salesTeam[i].sales) > 10000) {
+      let fullName = salesTeam[i].name.first + " " + salesTeam[i].name.last;
+      tenThousandArr.push(fullName);
+    }
+  }
+    return tenThousandArr;
+  }
+
+
 
 var output = tenThousandClub(salesTeam);
 console.log(output);
