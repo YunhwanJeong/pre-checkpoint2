@@ -6,8 +6,23 @@ if(typeof module === "object" && typeof module.exports === "object") {
   var salesTeam = require('../salesTeam.js');
 }
 
+function getTeenagerNameObj (salesTeam) {
+let teenagerNameArr = [];
+
+  for(let obj of salesTeam) {
+    if(obj.age < 20) {
+      teenagerNameArr.push(obj.name);
+    }
+  }
+  return teenagerNameArr;
+}
+
 function getTeenager(salesTeam) {
-  // your code here
+  let getFullName = function(nameObj) {
+    return nameObj.first + " " + nameObj.last;
+  }
+
+  return getTeenagerNameObj(salesTeam).map(getFullName);
 }
 
 var output = getTeenager(salesTeam);
