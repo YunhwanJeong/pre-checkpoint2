@@ -6,8 +6,26 @@ if(typeof module === "object" && typeof module.exports === "object") {
   var salesTeam = require('../salesTeam.js');
 }
 
+var collectAndSortAge = function (list) {
+  let ageArr = [];
+
+  for(let obj of list) {
+    ageArr.push(obj.age);
+  }
+  
+  ageArr.sort(function(a, b) {
+    return a - b;
+  });
+  return ageArr;
+}
+
+
 var isAgeDiverse = function(list) {
-  // your code here
+  if(collectAndSortAge(list)[0] < 10 || collectAndSortAge(list) >= 90) {
+    return false;
+  } else {
+    return true;
+  }
 };
 
 var output = isAgeDiverse(salesTeam);
