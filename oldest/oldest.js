@@ -7,8 +7,17 @@ if(typeof module === "object" && typeof module.exports === "object") {
 }
 
 function oldest(salesTeam){
-  // your code here
-}
+  let reducer = function(oldestStudent, currentStudent) {
+    if(oldestStudent.age >= currentStudent.age) {
+      return oldestStudent;
+    } else {
+      return currentStudent;
+    }
+  }
 
+  let oldestStudentObj = salesTeam.reduce(reducer);
+  let oldestStudentName = oldestStudentObj.name.first + " " + oldestStudentObj.name.last;
+  return "The oldest student is " + oldestStudentName;
+}
 var output = oldest(salesTeam);
 console.log(output);
