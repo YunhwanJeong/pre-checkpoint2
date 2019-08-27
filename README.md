@@ -9,12 +9,12 @@
 
 ## Grading Outline
 
-- [ ] getTeenager
-- [ ] isAgeDiverse
-- [ ] oldest
-- [ ] tenThousandClub
-- [ ] sumConsecutives
-- [ ] unique
+- ["Complete"] getTeenager
+- ["Mostly complete"] isAgeDiverse
+- ["Complete"] oldest
+- ["Mostly complete"] tenThousandClub
+- ["Significant progress"] sumConsecutives
+- ["Complete"] unique
 
 ## Self-Grading Process
 
